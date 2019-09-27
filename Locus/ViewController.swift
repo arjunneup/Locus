@@ -9,11 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    //instance variables are listed below. Theses values are be used globally
+
     var currentValue = 0
     var targetValue = 0
     var score = 0
     var round = 0
-    
     
     @IBOutlet weak var targetLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
@@ -28,6 +30,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.......
     }
 
+    // here local variables are those which starts with 'let' and 'var'. These are valid only inside showAlert() function. Used for temporary storage
     @IBAction func showAlert(_ sender: Any) {
         let difference = abs(targetValue - currentValue)
         let points = 100 - difference

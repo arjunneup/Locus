@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         let roundedValue = slider.value.rounded()
         currentValue = Int(roundedValue)
         startNewRound()
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view.......
     }
 
     @IBAction func showAlert(_ sender: Any) {
